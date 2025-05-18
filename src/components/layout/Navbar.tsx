@@ -419,14 +419,14 @@ const NavLinks: React.FC<{
       Results
     </NavLink>
     {/* New Payment NavLink added here */}
-    <NavLink
+    {/* <NavLink
       href="#"
       icon={<CreditCard size={18} />}
       isActive={currentSection === 'payment'}
       onClick={() => onNavigate('payment')}
     >
       Payment
-    </NavLink>
+    </NavLink> */}
     <NavLink
       href="#"
       icon={<Award size={18} />}
