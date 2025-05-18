@@ -1,0 +1,108 @@
+project/
+├── public/               # Static assets
+├── src/
+│   ├── components/      # React components
+│   │   ├── auth/        # Authentication components
+│   │   │   ├── SignInPage.tsx
+│   │   │   └── SignUpPage.tsx
+│   │   ├── layout/      # Layout components
+│   │   │   ├── Footer.tsx
+│   │   │   └── Navbar.tsx
+│   │   ├── sections/    # Main page sections
+│   │   │   ├── AboutSection.tsx
+│   │   │   ├── AchievementsSection.tsx
+│   │   │   ├── BranchSelection.tsx
+│   │   │   ├── HeroSection.tsx
+│   │   │   ├── ProfileSection.tsx
+│   │   │   ├── ResultsSection.tsx
+│   │   │   ├── TestInterface.tsx
+│   │   │   └── TestsSection.tsx
+│   │   └── ui/         # Reusable UI components
+│   │       ├── Button.tsx
+│   │       ├── Card.tsx
+│   │       ├── Container.tsx
+│   │       ├── Logo.tsx
+│   │       └── SectionTitle.tsx
+│   ├── data/           # Data and mock content
+│   │   └── questions.ts # Test questions data
+│   ├── firebase/       # Firebase configuration
+│   │   ├── auth.ts     # Authentication functions
+│   │   ├── config.ts   # Firebase setup
+│   │   └── results.ts  # Firestore operations
+│   ├── types/          # TypeScript type definitions
+│   │   ├── branch.ts   # Branch-related types
+│   │   └── questions.ts # Question-related types
+│   ├── App.tsx         # Main application component
+│   ├── index.css       # Global styles
+│   ├── main.tsx        # Application entry point
+│   └── vite-env.d.ts   # Vite type declarations
+├── .env                # Environment variables
+├── package.json        # Project dependencies
+├── tailwind.config.js  # Tailwind CSS configuration
+├── tsconfig.json       # TypeScript configuration
+└── vite.config.ts      # Vite configuration
+
+
+Frontend Architecture
+
+React (TypeScript)
+│
+├── Core Components
+│   ├── Authentication Flow
+│   │   ├── Sign In
+│   │   └── Sign Up
+│   │
+│   ├── Branch Selection
+│   │   ├── Current Tests
+│   │   ├── JEE Preparation
+│   │   └── NEET Preparation
+│   │
+│   └── Test System
+│       ├── Test Interface
+│       ├── Question Navigation
+│       └── Results Display
+│
+├── State Management
+│   ├── User Authentication State
+│   ├── Branch Selection State
+│   └── Test Progress State
+│
+└── UI Components
+    ├── Navigation
+    ├── Forms
+    └── Data Visualization
+
+
+backend Architecture
+
+Firebase
+│
+├── Authentication
+│   ├── Sign In
+│   └── Sign Up
+│
+├── Branch Selection
+│   ├── Current Tests
+│   ├── JEE Preparation
+│   └── NEET Preparation
+│
+├── Test System
+│   ├── Test Interface
+│   ├── Question Navigation
+│   └── Results Display
+│
+├── State Management
+│   ├── User Authentication State
+│   ├── Branch Selection State
+│   └── Test Progress State
+│
+└── UI Components
+    ├── Navigation
+    ├── Forms
+    └── Data Visualization
+
+Data Flow
+
+User Action → React Component → Firebase Service → Database
+     ↑                                                ↓
+     └────────────── State Update ──────────────────┘
