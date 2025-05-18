@@ -154,3 +154,4 @@ const SignInPage: React.FC<SignInPageProps> = ({ onSignIn, onSwitchToSignUp }) =
 };
 
 export default SignInPage;
+
