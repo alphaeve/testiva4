@@ -1,8 +1,11 @@
 import React from 'react';
 import Container from '../ui/Container';
-import Button from '../ui/Button';
 
-const HeroSection: React.FC = () => {
+interface HeroSectionProps {
+  onExplore: () => void;
+}
+
+const HeroSection: React.FC<HeroSectionProps> = ({ onExplore }) => {
   return (
     <section id="home" className="pt-24 pb-20">
       <Container>
@@ -14,11 +17,14 @@ const HeroSection: React.FC = () => {
             <p className="text-xl text-gray-600 mb-8">
               Practice. Analyze. Improve.
             </p>
-            <Button size="lg">
-              Explore Tests Now
-            </Button>
+            <button
+              onClick={onExplore}
+              className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+            >
+              Explore Now
+            </button>
           </div>
-          
+
           <div className="w-full lg:w-1/2">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-3xl transform rotate-3"></div>

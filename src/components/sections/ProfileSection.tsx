@@ -4,6 +4,7 @@ import { Calendar, Clock, Award, BarChart2 } from 'lucide-react';
 import Container from '../ui/Container';
 import Card from '../ui/Card';
 
+
 const ProfileSection: React.FC = () => {
   return (
     <section id="profile" className="py-20 bg-white">

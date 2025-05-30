@@ -10,12 +10,12 @@ interface BranchSelectionProps {
 
 const BranchSelection: React.FC<BranchSelectionProps> = ({ onSelectBranch }) => {
   const branches: BranchOption[] = [
-    {
-      id: 'current',
-      name: 'Current Tests',
-      description: 'Practice tests for your current academic curriculum',
-      image: 'https://images.pexels.com/photos/4778611/pexels-photo-4778611.jpeg'
-    },
+    // {
+    //   id: 'current',
+    //   name: 'Current Tests',
+    //   description: 'Practice tests for your current academic curriculum',
+    //   image: 'https://images.pexels.com/photos/4778611/pexels-photo-4778611.jpeg'
+    // },
     {
       id: 'jee',
       name: 'JEE Preparation',
